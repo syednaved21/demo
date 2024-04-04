@@ -61,8 +61,3 @@ nav a:hover:before{
     font-size: 23px;
 }
 
-.image{
-    position: fixed;
-    bottom: 0;
-    right: 100px;
-}
