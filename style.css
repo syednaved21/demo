@@ -1,57 +1,107 @@
+*{padding: 0; margin: 0; box-sizing: border-box; text-decoration: none; font-family: 'poppins',sans-serif; list-style: none;}
 
-*{ padding:0; margin:0; box-sizing: border-box; font-family:'poppins',sans-serif;}
-body{
+.navbar a{
+    font-size: 18px;
+    color: black;
+    font-family: 500;
+    margin: 0 20px;
+    border-bottom: 3px solid transparent;
+    transition: 0.3s ease;
+}
+
+.navbar a:hover,.navbar a.active{
+    color: rgb(20, 19, 19);
+    border-bottom: 3px solid rgb(19, 18, 18);
+}
+.home{
     width: 100%;
-    height:100vh;
+    min-height: 100vh;
+    background-color: rgb(139, 108, 108);
     display: flex;
-    justify-content:center;
-    align-items:center;
-    background:linear-gradient(45deg,black,rgb(102, 100, 100));
+    align-items: center;
+    gap: 7em;
+    padding: 30px 12% 0;
 }
-
-.calculator{
-    border: 1px solid silver;
-    padding: 16px;
-    border-radius: 10px;
-    background: transparent;
-    box-shadow: 0px 3px 15px rgba(98, 99, 100, 0.4);
+.home-content{
+    max-width: 800px;
 }
-
-input{
-    width: 100%;
-    border: none;
-    padding: 24px;
-    margin: 10px;
-    background: transparent;
-    box-shadow: 0px 3px 15px rgba(126, 123, 123, 0.1);
-    font-size: 40px;
-    text-align: right;
+.home-content h3{
+    font-size: 42px;
+}
+.home-content h1{
+    font-size: 42px;
+    line-height: 1.2;
+}
+.home-content p{
+    font-size: 18px;
+    margin: 25px 0 30px;
+}
+.btn-box{
+    width: 345px;
+    display: flex;
+    gap: 2em;
+}
+.btn-1{
+    padding: 15px 28px;
+    background-color:rgb(228, 218, 218);
+    color: rgb(19, 17, 16);
+    border: 2px solid transparent;
+    border-radius: 8px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    transition: 0.2s ease;
     cursor: pointer;
+}
+.btn-1:hover{
+    background-color: whitesmoke;
+    color: brown;
+    border: 2px solid black;
+} 
+.img-box img{
+    border-radius: 25%;
+    width: 250px;
+}
+::-webkit-scrollbar{
+    width: 15px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: firebrick;
+}
+::-webkit-scrollbar-track{
+    background-color: black;
+    width: 50px;
+}
+.contact-form h2{
+    text-align: center;
+    margin-top: 3em;
+    margin-bottom: 1em;
+    font-size: 30px;
+}
+.contact-form form{
+    max-width: 50em;
+    text-align: center;
+    margin: 1rem auto;
+    margin-bottom: 3em;
+}
 
+.contact-form form .input-box{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
-input::placeholder{
-    color:#832828;
+.contact-form form , .input-box input,
+.contact-form form textarea{
+    width: 90%;
+    padding: 1.4em;
+    font-size: 16px;
+    color: black;
+    background: whitesmoke;
+    border-radius: .5rem;
+    margin:  1rem 0;
+    resize:none;
 }
 
-button{
-    border: none;
-    width: 65px;
-    height: 65px;
-    margin: 10px;
-    border-radius:45%;
-    background: black;
-    color:rgb(155, 71, 71);
-    font-size: 25px;
-    box-shadow: -8px -8px 15px rgba(255,255,255,);
-    cursor: pointer;
-
-}
-.equalBtn{
-    background-color: white;
-}
-.operator{
-    color: white;
-}
 
 
 
